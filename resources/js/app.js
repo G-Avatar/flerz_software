@@ -1,0 +1,13 @@
+import './bootstrap';
+import { createApp } from 'vue';
+import App from '@/components/App.vue';
+import router from '@/root/router';
+import PrimeVue from "primevue/config";
+
+const app = createApp(App);
+app.use(PrimeVue, {
+    unstyled: true,
+});
+app.use(router.pinia);
+app.use(router.router);
+app.mount('#app');

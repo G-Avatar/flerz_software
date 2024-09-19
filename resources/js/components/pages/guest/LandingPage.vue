@@ -1,9 +1,11 @@
 <template>
-    <div>
+    <div class="overflow-x-hidden max-h-screen max-w-screen-auto">
       <Navbar />
       <Hero />
-      <AboutUs />
+      
       <Portfolio />
+      <AboutUs />
+      <Partnerships />
       <ContactUs />
       <Footer />
     </div>
@@ -16,6 +18,7 @@
   import Portfolio from '@/components/parts/Portfolio.vue'
   import ContactUs from '@/components/parts/ContactUs.vue'
   import Footer from '@/components/parts/Footer.vue'
+  import Partnerships from '@/components/parts/Partnerships.vue'
   </script>
   
   <style>

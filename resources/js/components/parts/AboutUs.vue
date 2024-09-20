@@ -48,26 +48,56 @@
     </div>
 
     <!-- History Section -->
-    <div class="history-section p-10">
-      <h1 class="text-center text-4xl font-bold mb-4"><span class="pi pi-clock mr-2 mb-5"></span>History</h1>
-      <div class="history-list space-y-6">
-        <div class="history-item p-4 border-2 border-black rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold">Launching of ECOS</h3>
-          <p class="text-sm">May 15, 2024</p>
-          <p>The Enhanced Church Operation System is launched to promote digitalization of various churches and improve
-            their archiving process.</p>
+    <div class="history-section p-4 md:p-10 bg-gray-50">
+      <h1 class="text-center text-2xl md:text-4xl font-bold mb-6 md:mb-8 flex items-center justify-center">
+        <span class="pi pi-clock mr-2"></span> History
+      </h1>
+
+      <div class="history-list relative space-y-10">
+        <div class="absolute left-1/2 transform -translate-x-1/2 h-full border-l-4 border-teal-500"></div>
+
+        <div class="history-item flex flex-col md:flex-row items-center justify-between relative">
+          <div
+            class="w-full md:w-5/12 p-4 border-2 border-teal-500 rounded-lg shadow-md bg-white relative z-10 mb-6 md:mb-0">
+            <h3 class="text-lg md:text-xl font-semibold">Launching of ECOS</h3>
+            <p class="text-xs md:text-sm text-teal-700">May 15, 2024</p>
+            <p>The Enhanced Church Operation System is launched to promote digitalization of various churches and
+              improve their archiving process.</p>
+          </div>
+          <div class="absolute left-1/2 transform -translate-x-1/2 h-full md:h-0.5 bg-teal-500 w-4 md:w-8"></div>
+          <div class="hidden md:block w-5/12"></div>
         </div>
-        <div class="history-item p-4 border-2 border-black rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold">Copyright Acquisition for the Enhanced Barangay Operations System</h3>
-          <p class="text-sm">January 18, 2024</p>
-          <p>The copyright of Enhanced Barangay Operation System (EBOS) was obtained and disseminated to various
-            barangays, especially in the Davao Region.</p>
+
+        <!-- History Item 2 -->
+        <div class="history-item flex flex-col md:flex-row items-center justify-between relative">
+          <!-- Empty Space on Left (only on larger screens) -->
+          <div class="hidden md:block w-5/12"></div>
+          <!-- Connector to vertical line -->
+          <div class="absolute left-1/2 transform -translate-x-1/2 h-full md:h-0.5 bg-teal-500 w-4 md:w-8"></div>
+          <!-- Right Item -->
+          <div
+            class="w-full md:w-5/12 p-4 border-2 border-teal-500 rounded-lg shadow-md bg-white relative z-10 mb-6 md:mb-0">
+            <h3 class="text-lg md:text-xl font-semibold">Copyright Acquisition for EBOS</h3>
+            <p class="text-xs md:text-sm text-teal-700">January 18, 2024</p>
+            <p>The copyright of Enhanced Barangay Operation System (EBOS) was obtained and disseminated to various
+              barangays, especially in the Davao Region.</p>
+          </div>
         </div>
-        <div class="history-item p-4 border-2 border-black rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold">Foundation of FLERZ</h3>
-          <p class="text-sm">June 18, 2023</p>
-          <p>Founded on June 18, 2023, FLERZ was created to address challenges in Tagum City, aiming to improve business
-            processes and operations through strategic and operational support.</p>
+
+        <!-- History Item 3 -->
+        <div class="history-item flex flex-col md:flex-row items-center justify-between relative">
+          <!-- Left Item -->
+          <div
+            class="w-full md:w-5/12 p-4 border-2 border-teal-500 rounded-lg shadow-md bg-white relative z-10 mb-6 md:mb-0">
+            <h3 class="text-lg md:text-xl font-semibold">Foundation of FLERZ</h3>
+            <p class="text-xs md:text-sm text-teal-700">June 18, 2023</p>
+            <p>Founded on June 18, 2023, FLERZ was created to address challenges in Tagum City, aiming to improve
+              business processes and operations through strategic and operational support.</p>
+          </div>
+          <!-- Connector to vertical line -->
+          <div class="absolute left-1/2 transform -translate-x-1/2 h-full md:h-0.5 bg-teal-500 w-4 md:w-8"></div>
+          <!-- Empty Space on Right (only on larger screens) -->
+          <div class="hidden md:block w-5/12"></div>
         </div>
       </div>
     </div>

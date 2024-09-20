@@ -4,6 +4,7 @@
       <Hero />
       
       <Portfolio />
+      <Products />
       <AboutUs />
       <Partnerships />
       <ContactUs />
@@ -19,6 +20,7 @@
   import ContactUs from '@/components/parts/ContactUs.vue'
   import Footer from '@/components/parts/Footer.vue'
   import Partnerships from '@/components/parts/Partnerships.vue'
+  import Products from '@/components/parts/Products.vue'
   </script>
   
   <style>

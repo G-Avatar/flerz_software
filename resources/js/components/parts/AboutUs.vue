@@ -1,128 +1,98 @@
 <template>
   <div class="card-container p-6 border-2 border-gray-800 bg-teal-50 shadow-lg">
-    <h1 class="text-center text-4xl font-bold text-teal-700 mb-4">About Us</h1>
-    <p class="text-center text-lg text-gray-100 mb-6 p-5 bg-teal-500 shadow-md">
-      FLERZ Management Consultancy Services is dedicated to providing innovative and strategic solutions tailored to enhance organizational performance and drive business growth. With a team of seasoned experts, FLERZ specializes in delivering comprehensive management consulting services that encompass operational efficiency, strategic planning, and technological integration. Our mission is to empower businesses with the insights and tools needed to achieve their objectives, streamline processes, and maximize their competitive edge in today’s dynamic market. At FLERZ, we are committed to fostering long-term success for our clients through personalized and results-driven consultancy.
+    <h1 class="text-center text-3xl font-extrabold text-gray-700 mb-6 uppercase tracking-widest">About Us</h1>
+    <p class="text-center text-lg mb-6 p-8 bg-gray-800 rounded-lg shadow-md leading-relaxed text-gray-200">
+      FLERZ Management Consultancy Services is dedicated to providing innovative and strategic solutions tailored to
+      enhance organizational performance and drive business growth. With a team of seasoned experts, FLERZ specializes
+      in delivering comprehensive management consulting services that encompass operational efficiency, strategic
+      planning, and technological integration. Our mission is to empower businesses with the insights and tools needed
+      to achieve their objectives, streamline processes, and maximize their competitive edge in today’s dynamic market.
+      At FLERZ, we are committed to fostering long-term success for our clients through personalized and results-driven
+      consultancy.
     </p>
-    <div class="timeline-container border border-black p-10 bg-gray-800 shadow-lg">
-      <h1 class="text-center text-4xl font-bold mb-4 text-white">Our Timeline</h1>
-      <Timeline :value="events" align="alternate" class="customized-timeline">
-        <template #marker="slotProps">
-          <span class="flex w-12 h-12 items-center justify-center text-white rounded-full shadow-lg" :style="{ backgroundColor: slotProps.item.color }">
-            <i :class="slotProps.item.icon"></i>
-          </span>
-        </template>
-        <template #content="slotProps">
-          <Card class="mt-4 border-2 border-white p-4  shadow-md transition-transform transform hover:scale-105">
-            <template #title>
-              <h3 class="text-xl font-semibold text-white">{{ slotProps.item.status }}</h3>
-            </template>
-            <template #subtitle>
-              <p class="text-sm text-white">{{ slotProps.item.date }}</p>
-            </template>
-            <template #content>
-              <p class="text-white mb-4">{{ slotProps.item.description }}</p>
-            </template>
-          </Card>
-        </template>
-      </Timeline>
+
+    <div class="vision-mission-section bg-gray-100 py-10 px-6 md:px-20 shadow-lg">
+      <div class="section-header text-center mb-8">
+        <h2 class="text-4xl font-bold">Our Vision, Mission, and Core Values</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="vision text-gray-900 p-6 rounded-lg shadow-md bg-white">
+          <h3 class="text-2xl font-semibold text-teal-700 mb-4">Vision</h3>
+          <p class="text-lg">To expand internationally the consulting services and to provide assistance to various
+            individuals or businesses around the world.</p>
+        </div>
+        <div class="mission bg-white text-gray-900 p-6 rounded-lg shadow-md">
+          <h3 class="text-2xl font-semibold text-teal-700 mb-4">Mission</h3>
+          <p class="text-lg">To provide consultancy services in the Philippines in strategic, operational, or human
+            resources fields.</p>
+        </div>
+      </div>
+      <div class="core-values mt-10 bg-white text-gray-900 p-6 rounded-lg shadow-md">
+        <h3 class="text-2xl font-semibold text-teal-700 mb-4 text-center">Core Values</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="core-value-card p-4 bg-gray-100 rounded-lg shadow-md">
+            <h4 class="text-lg font-semibold"><strong>Integrity</strong></h4>
+            <p class="text-md">Upholding the highest standards of honesty and ethical behavior.</p>
+          </div>
+          <div class="core-value-card p-4 bg-gray-100 rounded-lg shadow-md">
+            <h4 class="text-lg font-semibold"><strong>Business Mindset</strong></h4>
+            <p class="text-md">Focused on achieving results and driving business growth.</p>
+          </div>
+          <div class="core-value-card p-4 bg-gray-100 rounded-lg shadow-md">
+            <h4 class="text-lg font-semibold"><strong>Attitude</strong></h4>
+            <p class="text-md">Maintaining a positive and proactive approach in all endeavors.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- History Section -->
+    <div class="history-section p-10">
+      <h1 class="text-center text-4xl font-bold mb-4"><span class="pi pi-clock mr-2 mb-5"></span>History</h1>
+      <div class="history-list space-y-6">
+        <div class="history-item p-4 border-2 border-black rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold">Launching of ECOS</h3>
+          <p class="text-sm">May 15, 2024</p>
+          <p>The Enhanced Church Operation System is launched to promote digitalization of various churches and improve
+            their archiving process.</p>
+        </div>
+        <div class="history-item p-4 border-2 border-black rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold">Copyright Acquisition for the Enhanced Barangay Operations System</h3>
+          <p class="text-sm">January 18, 2024</p>
+          <p>The copyright of Enhanced Barangay Operation System (EBOS) was obtained and disseminated to various
+            barangays, especially in the Davao Region.</p>
+        </div>
+        <div class="history-item p-4 border-2 border-black rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold">Foundation of FLERZ</h3>
+          <p class="text-sm">June 18, 2023</p>
+          <p>Founded on June 18, 2023, FLERZ was created to address challenges in Tagum City, aiming to improve business
+            processes and operations through strategic and operational support.</p>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script setup>
 import { ref } from 'vue';
-import Timeline from 'primevue/timeline';
-import Card from 'primevue/card';
-
-const events = ref([
-  { 
-    status: 'Launching of ECOS', 
-    date: 'May 15, 2024', 
-    icon: 'pi pi-circle', 
-    color: '#607D8B', 
-    description: 'The Enhanced Church Operation System is launched to promote digitalization of various churches and improve their archiving process.' 
-  },
-  { 
-    status: 'Partnership with Ultra-Fine Copper Powder', 
-    date: 'April 26, 2024', 
-    icon: 'pi pi-circle', 
-    color: '#607D8B', 
-    description: 'Flerz Management Consultancy Services has been granted the authority to sell Ultra-Fine Copper Powder. Ultra-fine copper powder is highly valuable in various industrial applications.' 
-  },
-  { 
-    status: 'Copyright Acquisition for the Enhanced Barangay Operations System', 
-    date: 'January 18, 2024', 
-    icon: 'pi pi-circle', 
-    color: '#607D8B', 
-    description: 'The copyright of Enhanced Barangay Operation System (EBOS) was obtained and disseminated to various barangays, especially in the Davao Region.' 
-  },
-  { 
-    status: 'Foundation of FLERZ', 
-    date: 'June 18, 2023', 
-    icon: 'pi pi-circle', 
-    color: '#607D8B', 
-    description: 'Founded on June 18, 2023, FLERZ was created to address challenges in Tagum City, aiming to improve business processes and operations through strategic and operational support.' 
-  }
-]);
 </script>
 
 <style lang="scss" scoped>
 .card-container {
   background: #e0f2f1; // Light background for the main container
   padding: 2rem;
-  border-radius: 1rem;
 }
 
-.timeline-container {
-  background: #000; // Dark background for the timeline container
-  border-radius: 1rem; // Rounded corners for the container
+.history-list {
+  margin-top: 2rem;
 }
 
-.customized-timeline {
-  .p-timeline-event {
-    position: relative;
-    padding-left: 4rem; // Increased for better spacing
+.history-item {
+  transition: background-color 0.3s ease;
+}
 
-    .p-timeline-event-opposite {
-      border-left: 4px solid #9C27B0; // Color of the vertical line
-      position: absolute;
-      left: -2rem; // Adjusted for alignment
-      top: 0;
-      bottom: 0;
-    }
-
-    .p-timeline-event-content {
-      position: relative;
-      padding-left: 2.5rem; // Added extra space for the line
-    }
-
-    .p-timeline-event-marker {
-      border: 3px solid #9C27B0; // Thicker border for the marker
-      background-color: #fff; // White background for marker
-      box-shadow: 0 0 4px rgba(0,0,0,0.2); // Shadow for better visibility
-    }
-  }
-
-  .p-timeline-event-content {
-    &:hover {
-      background-color: #f1f1f1; // Light background on hover
-    }
-  }
-
-  @media screen and (max-width: 960px) {
-    .p-timeline-event {
-      flex-direction: column;
-
-      .p-timeline-event-opposite {
-        flex: 0;
-      }
-
-      .p-timeline-event-content {
-        padding-left: 1rem; // Adjust padding for mobile view
-        text-align: center;
-      }
-    }
-  }
+.history-item:hover {
+  background-color: #f1f1f1; // Highlight on hover
 }
 </style>

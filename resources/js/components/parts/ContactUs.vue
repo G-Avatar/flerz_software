@@ -1,5 +1,5 @@
 <template>
-  <section id="contact" class="py-16 bg-gray-1 text-center">
+  <section id="contact" class="py-16 bg-gray-1 text-center bg-gray-100">
     <div class="container mx-auto px-4">
       <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
       <p class="text-lg mb-12 font-semibold">We'd love to hear from you! Please fill out the form below and we'll get back to you as soon as possible.</p>

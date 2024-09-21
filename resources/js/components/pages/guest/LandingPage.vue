@@ -1,6 +1,6 @@
 <template>
     <div class="overflow-x-hidden max-h-screen max-w-screen-auto">
-      <Navbar />
+      <NavBar />
       <Hero />
       
       <Portfolio />
@@ -13,7 +13,7 @@
   </template>
   
   <script setup>
-  import Navbar from '@/components/parts/Navbar.vue'
+  import NavBar from '@/components/parts/NavBar.vue'
   import Hero from '@/components/parts/Hero.vue'
   import AboutUs from '@/components/parts/AboutUs.vue'
   import Portfolio from '@/components/parts/Portfolio.vue'

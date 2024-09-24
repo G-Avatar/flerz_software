@@ -14,8 +14,7 @@
                <Recruitment />
             </div>
             <div v-else-if="activeTab.name === 'Onboarding'">
-                <h2 class="text-lg font-bold">Content for Tab 2</h2>
-                <p>This is the content for the second tab.</p>
+                <Onboarding />
             </div>
             <div v-else-if="activeTab.name === 'Payroll'">
                 <h2 class="text-lg font-bold">Content for Tab 3</h2>
@@ -40,6 +39,7 @@
 <script setup>
 import { ref } from 'vue';
 import Recruitment from './Recruitment.vue';
+import Onboarding from './Onboarding.vue';
 
 const tabs = [
     { name: 'Recruitment' },

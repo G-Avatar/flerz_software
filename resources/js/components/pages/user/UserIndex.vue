@@ -22,7 +22,7 @@ const route = useRoute();
 const sidebarOpen = ref(false);
 
 const getName = () => {
-  if (route.name === 'app-dashboard') {
+  if (route.name === 'user-dashboard') {
       return 'Dashboard';
   }
   return '';

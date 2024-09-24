@@ -5,13 +5,7 @@
           <h1 class="text-center text-lg font-bold">FLERZ</h1>
         </div>
         <div class="flex flex-grow justify-center space-x-4">
-          <button
-            @click="selectTab('HR')"
-            :class="{'text-blue-400': selectedTab === 'HR'}"
-            class="hover:text-blue-300"
-          >
-            Human Resources Consulting
-          </button>
+          <h1 class="text-gray-200">Human Resources Consulting</h1>
         </div>
         <div class="flex items-center ml-2 cursor-pointer gap-2">
           <span class="font-poppins text-md px-2 hidden sm:inline-block">John Doe</span>
@@ -24,12 +18,6 @@
   
   <script setup>
   import { ref } from 'vue';
-  
-  const selectedTab = ref('HR'); // Initialize selectedTab with a default value
-  
-  function selectTab(tab) {
-    selectedTab.value = tab; // Update the selectedTab when a tab is clicked
-  }
   </script>
   
   <style scoped>

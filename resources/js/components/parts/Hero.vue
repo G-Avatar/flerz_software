@@ -1,10 +1,10 @@
 <template>
-  <div class="hero-section relative py-16">
+  <div class="hero-section relative py-16 flex pl-4 bg-gray-100">
     <div class="relative container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between p-5">
       <div class="hero-message w-full lg:w-1/2 text-center lg:text-left lg:pr-8">
         <h1 class="text-4xl font-bold flex items-center justify-center lg:justify-start">
           Welcome to
-          <img :src="flerzIcon" class="logo p-1 bg-white" alt="FLERZ Icon" />
+          <img :src="flerzIcon" class="logo p-1" alt="FLERZ Icon" />
         </h1>
         <p class="text-lg mt-4">
           Dedicated to enhancing efficiency and streamlining operations across various sectors.
@@ -35,7 +35,7 @@ import flerzIcon from '@/landing_page/logo.png';
 .hero-section {
   position: relative;
   text-align: center;
-  padding-top: 80px; /* Adjust if needed to avoid overlap with navbar */
+  padding-top: 80px;
 }
 
 .hero-message {

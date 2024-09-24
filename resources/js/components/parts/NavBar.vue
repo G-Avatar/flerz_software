@@ -20,9 +20,14 @@
             <i class="pi pi-clipboard"></i>
             <span>Portfolio</span>
           </a>
-          <a href="#careers" class="scroll-link hover:text-gray-600 font-semibold text-sm md:text-base flex items-center space-x-1">
+          <a class="scroll-link hover:text-gray-600 font-semibold text-sm md:text-base flex items-center space-x-1">
             <i class="pi pi-briefcase"></i>
+            <RouterLink
+               to="/careers"
+            >
             <span>Careers</span>
+
+            </RouterLink>
           </a>
           <a href="#contact" class="scroll-link hover:text-gray-600 font-semibold text-sm md:text-base flex items-center space-x-1">
             <i class="pi pi-envelope"></i>

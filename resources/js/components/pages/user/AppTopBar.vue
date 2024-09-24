@@ -8,7 +8,7 @@
           <h1 class="text-gray-200">Human Resources Consulting</h1>
         </div>
         <div class="flex items-center ml-2 cursor-pointer gap-2">
-          <span class="font-poppins text-md px-2 hidden sm:inline-block">John Doe</span>
+          <span class="font-poppins text-md px-2 hidden sm:inline-block">Marvii Radoc</span>
           <i class="pi pi-sign-out"></i>
           <span class="font-poppins text-md px-2 hidden sm:inline-block">Logout</span>
         </div>
@@ -22,15 +22,15 @@
   
   <style scoped>
   .topbar {
-    top: 0; /* Ensure it's at the very top */
-    left: 0; /* Ensure it spans full width */
-    right: 0; /* Ensure it spans full width */
+    top: 0; 
+    left: 0; 
+    right: 0; 
     border: 2px white;
   }
   
   .fixed {
-    position: fixed; /* Fix the top bar in place */
-    z-index: 1000; /* Ensure it's above other elements */
+    position: fixed; 
+    z-index: 1000; 
   }
   </style>
   

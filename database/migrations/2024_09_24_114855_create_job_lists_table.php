@@ -11,8 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('jobs', function (Blueprint $table) {
-            $table->uuid('job_id');
+        Schema::create('job_lists', function (Blueprint $table) {
+            $table->uuid('job_id')->primary();
             $table->integer('job_no');
             $table->string('job_details');
             $table->string('keywords');
@@ -20,7 +20,6 @@ return new class extends Migration
             $table->decimal('min_salary')->nullable();
             $table->decimal('max_salary')->nullable();
             $table->string('applicable_visa')->nullable();
-            $table->integer('no_of_applicants');
             
         });
     }

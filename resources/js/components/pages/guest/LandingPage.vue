@@ -2,7 +2,6 @@
     <div class="overflow-x-hidden max-h-screen max-w-screen-auto">
       <NavBar />
       <Hero />
-      
       <Portfolio />
       <Products />
       <AboutUs />

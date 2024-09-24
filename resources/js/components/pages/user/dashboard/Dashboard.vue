@@ -17,20 +17,19 @@
                 <Onboarding />
             </div>
             <div v-else-if="activeTab.name === 'Payroll'">
-                <h2 class="text-lg font-bold">Content for Tab 3</h2>
-                <p>This is the content for the third tab.</p>
+                <Payroll />
             </div>
             <div v-else-if="activeTab.name === 'Compensation and Benefits'">
-                <h2 class="text-lg font-bold">Content for Tab 4</h2>
-                <p>This is the content for the third tab.</p>
+                <Benefits />
             </div>
             <div v-else-if="activeTab.name === 'Training and Development'">
-                <h2 class="text-lg font-bold">Content for Tab 5</h2>
-                <p>This is the content for the third tab.</p>
+                <Training />
             </div>
             <div v-else-if="activeTab.name === 'Offboarding'">
-                <h2 class="text-lg font-bold">Content for Tab 6</h2>
-                <p>This is the content for the third tab.</p>
+                <Offboarding />
+            </div>
+            <div v-else-if="activeTab.name === 'Retirement'">
+                <Retirement />
             </div>
         </div>
     </div>
@@ -40,6 +39,12 @@
 import { ref } from 'vue';
 import Recruitment from './Recruitment.vue';
 import Onboarding from './Onboarding.vue';
+import Payroll from './Payroll.vue';
+import Benefits from './Benefits.vue';
+import Training from './Training.vue';
+import Offboarding from './Offboarding.vue';
+import Retirement from './Retirement.vue';
+
 
 const tabs = [
     { name: 'Recruitment' },
@@ -48,6 +53,7 @@ const tabs = [
     { name: 'Compensation and Benefits' },
     { name: 'Training and Development' },
     { name: 'Offboarding' },
+    { name: 'Retirement' },
 ];
 
 const activeTab = ref(tabs[0]); // Default active tab
